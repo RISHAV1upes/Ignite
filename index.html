@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+
+    <title>Home||Ignite 2019</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styletime.css">
+	<style>
+	
+
+.textstyle a { color:white; text-decoration: none; font-size:42px;font-weight:100;font-family:OCR A Std;}
+
+
+p span {
+  letter-spacing: 0;
+  font-size:25px;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 180px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+   </style>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
+    <header class="main-header">
+        <!-- Navigation Start -->
+        <div class="main-nav nav-transparent">
+            <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll logo-black" href="#page-top"><img class="main-logo" src="images/favicon.jpg" alt=""> </a>
+                        <a class="navbar-brand page-scroll logo-white" href="#page-top"><img class="main-logo" src="images/logo1.png" alt=""> </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li> <a class="page-scroll" href="#page-top">Home</a> </li>
+                            <li> <a class="page-scroll" href="#about">About</a> </li>
+                            <li> <a class="page-scroll" href="#speakers">Speakers</a> </li>
+                            <li> <a class="page-scroll" href="#schedules">Schedules</a> </li>
+                            <li> <a class="page-scroll" href="#venue">Venue</a> </li>
+                            <li> <a class="page-scroll" href="#sponsors">Sponsors</a> </li>
+                            <li> <a class="page-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Start -->
+    <section class="main-banner">
+        <div id="particles-js">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-banner header-banner-content">
+						    <!--<img src="images/logo.png" style="margin-top:-150px;">-->
+                            <!--<h1><span>Ignite 2019</span></h1>
+                            <h3>Feb 15-16, 2019</h3>-->
+                            
+						<div class="textstyle">
+                           <h1>
+                                <a href="" class="typewrite"  data-period="2000" data-type='[ "Ignite 2019" ]'>
+                                <span class="wrap"></span>
+                                </a>
+                            </h1>
+                        </div>
+						<!--<h4>Annual Techno-Legal-Management-Design Fest</h4>-->
+						<!-- anuual text html-->
+						<p>
+                        <span>
+                           Annual Techno-Legal-Management-Design Fest
+                        </span>
+                        </p>
+
+						 <!--annual text html-->
+						<!-- type writer script-->
+						<script>
+					var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+					
+					
+					</script>
+					
+						<!--end of type write script-->
+<!--<div class='countdown' data-date="2018-12-30"></div>-->
+
+			<div id="clockdiv" class="" style="margin-top:40px;">
+				<div>
+					<span class="days" id="day"></span>
+					<div class="smalltext">Days</div>
+				</div>
+				<div>
+					<span class="hours" id="hrs"></span>
+					<div class="smalltext">Hours</div>
+				</div>
+				<div>
+					<span class="minutes" id="min"></span>
+					<div class="smalltext">Mins</div>
+				</div>
+				<div>
+					<span class="seconds" id="sec"></span>
+					<div class="smalltext">Sec</div>
+				</div>
+				
+
+			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- timer script-->
+	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 15, 2019 10:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    if(distance>0){
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	var daysxs = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hoursxs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutesxs = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var secondsxs = Math.floor((distance % (1000 * 60)) / 1000);
+	
+    // Output the result in an element with id="demo"
+    document.getElementById("day").innerHTML = days;
+   document.getElementById("hrs").innerHTML = hours ;
+   document.getElementById("min").innerHTML = minutes ;
+   document.getElementById("sec").innerHTML = seconds ;
+   }
+   else{
+   window.location.href=redirect;
+   }
+  
+    
+}, 1000);
+//document.getElementById("day").innerHTML = 2 ;
+//document.getElementById("sec").innerHTML = 40 ;
+</script>
+<!-- timer script-->
+ 
+
+    <!-- About Start -->
+    <section class="about-area" id="about">
+        <img class="left-img" src="images/left-img.png" alt="">
+        <img class="right-img" src="images/right-img.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-col">
+                        <h3>Few words about <span>IGNITE</span></h3>
+                        <p>As the world is going berserk with everything going on and everything lost in chaos, and as we try to imply that too much variety kills the vibe, IGNITE 2019 is here to prove all that, just wrong!</p>
+                        <p>A mega event in all aspects, IGNITE is the Techno-Legal-Management Fest, annually conducted by UPES, Dehradun.</p>
+					     <p>
+						 And this year, it is just going to be Bigger, Better and Beautiful! Unseen and unimaginable!
+						 Come and get involved in the events of events and become a part of an unforgettable experience!
+						 </p>
+					</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-col">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               What is Ignite?
+                            </a>
+                        </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p> A mega event in all aspects, IGNITE is the Techno-Legal-Management Fest, annually conducted by UPES, Dehradun.<br>
+										And this year, it is just going to be Bigger, Better and Beautiful! Unseen and unimaginable! Come and get involved in the event of events and become a part of an unforgettable experience!
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                When and where is Ignite?
+                            </a>
+                        </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <p>Ignite-2019 is on 15th and 16th of February and will be held at the UPES Campus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How do I get to Ignite-2019?
+                            </a>
+                        </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <p>The UPES campus is well connected by public transport and is surrounded by amazing scenic beauty. You can easily navigate through Google Maps and in case you are lost, feel free to contact us.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                               How can I participate in Ignite-2019?
+                            </a>
+                        </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <p>The registrations are open for everyone and you can register at the IGNITE registration desk , WiFi zone, UPES .</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Where to go if I have questions regarding the event?
+                            </a>
+                        </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        <p> Ignite has its volunteers all around the campus and at all the events. You can approach them at any  time and with any query.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Start -->
+    <section class="speakers-area parallax" id="speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Our honorable <span>Speakers</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay="0s">
+                        <div class="speaker-box">
+                            <div class="pic">
+                                <img src="images/speaker/speaker1.png" alt="">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h4>Name</h4>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".2s">
+                        <div class="speaker-box">
+                            <div class="pic">
+                                <img src="images/speaker/.jpg" alt="">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                           <h4>Name</h4>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".3s">
+                        <div class="speaker-box">
+                            <div class="pic">
+                                <img src="images/speaker/3.jpg" alt="">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h4>Name</h4>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".4s">
+                        <div class="speaker-box">
+                            <div class="pic">
+                                <img src="images/speaker/4.jpg" alt="">
+                                
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h4>Name</h4>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--schedule starts-->
+	<!-- Schedules Start -->
+    <section class="schedule-area" id="schedules">
+        <img class="left-img" src="images/left-img.png" alt="">
+        <img class="right-img" src="images/right-img.png" alt="">
+        <div class="container" style="">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Event <span>Schedules</span></h2>
+                    </div>
+                </div>
+            </div>
+                    
+                     <marquee>Events scheduled Will be announced soon</marquee>
+                
+        </div>
+    </section>
+
+<!-- schedule ends-->
+    <!-- Venue Start -->
+    <section class="venue-area" id="venue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2><span>venue</span> information</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="venue-col">
+                        <div class="info-box">
+                            <i class="flaticon-placeholder"></i>
+                            <p>COES,UPES<br>P.O.Bidholi,Premnagar,Dehradun</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="flaticon-mail"></i>
+                            <p>ignite2019@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="venue-col">
+                        <img src="images/contact.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venue-col">
+                        <div class="info-box">
+                            <i class="flaticon-phone-call"></i>
+                            <p>+91 7987177855<br> +91 7617543888</p>
+                        </div>
+                        <div class="info-box">
+                            <h4>Social Link</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Start -->
+    <section class="counter-area parallax">
+        <div class="container">
+            <div class="rowe">
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="counter-col">
+                        <div class="counter">
+                            <div class="count">55</div>
+                            <img src="images/icon/1.png" alt="">
+                        </div>
+                        <p>Speakers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="counter-col">
+                        <div class="counter">
+                            <div class="count">10</div>
+                            <img src="images/icon/2.png" alt="">
+                        </div>
+                        <p>Sponsors</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="counter-col">
+                        <div class="counter">
+                            <div class="count">70</div>
+                            <img src="images/icon/3.png" alt="">
+                        </div>
+                        <p>Events</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                    <div class="counter-col">
+                        <div class="counter">
+                            <div class="count">2000</div>
+                            <img src="images/icon/4.png" alt="">
+                        </div>
+                        <p>Participants</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Start -->
+    <section class="sponsor-area" id="sponsors">
+        <img class="left-img" src="images/left-img.png" alt="">
+        <img class="right-img" src="images/right-img.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Our Event <span>Sponsors</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-3">
+                    <div class="sponsor-col">
+                        <a href="#"><img src="images/sponsor/.png" alt="1st"></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-3">
+                    <div class="sponsor-col">
+                        <a href="#"><img src="images/sponsor/2.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-3">
+                    <div class="sponsor-col">
+                        <a href="#"><img src="images/sponsor/.png" alt="3rd"></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-3">
+                    <div class="sponsor-col">
+                        <a href="#"><img src="images/sponsor/.png" alt="4th"></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-3">
+                    <div class="sponsor-col">
+                        <a href="#"><img src="images/sponsor/5.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-3">
+                    <div class="sponsor-col">
+                        <a href="#"><img src="images/sponsor/.png" alt="6th"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google map -->
+    <div id="map" class="theme-color" style="">
+	   <iframe style="height:400px;"width="100%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=30.4158,77.9663&amp;q=Upes%20Uttarakhand+(map)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href=""></a></iframe><br />
+		
+	</div>
+
+    <!-- Contact Start -->
+    <section class="contact-area" id="contact">
+        <img class="left-img" src="images/left-img.png" alt="">
+        <img class="right-img" src="images/right-img.png" alt="">
+        <div class="container">
+           
+			          <div class="section-title" style="text-align:center;">
+                        <h2>Contact Us</h2>
+                    </div>
+            <div class="row contact-form-row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="contact-col">
+                            <form id="" method="post" action="contact.php">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email"  required>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" id="subject" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="contact-textarea">
+                                        <textarea class="form-control" rows="6" placeholder="Write Message" id="message" name="message" required></textarea>
+                                        <button class="btn btn-default my-btn btn-color text-center" type="submit" value="Submit Form">Send Message</button>
+                                    </div>
+                                </div>
+                                <div id="form-messages"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    
+
+    <section class="footer-copy-right text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>©2019. Designed by <a href="" target="_blank">Rishav Ranjan.</a> All Rights Reserved Ignite 2019.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Style Background ten End -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/jquery.plate.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
